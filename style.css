@@ -3,35 +3,24 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: #23232e;
   color: white;
   font-size: 1rem;
   font-family: "Courier New", Courier, monospace;
+  padding: 40px;
 }
 
 .form-container {
-  width: 800px;
+  /* width: 800px; */
   padding: 20px;
-  /* background: lightslategray; */
   background: #333344;
-  /* background: #fafafa; */
   border-radius: 10px;
-  /* font-size: 18px; */
 }
 
-/* .form-control {
-  margin-bottom: 20px;
+.page-wrap {
+  max-width: 900px;
+  margin: auto;
+  /* border: 1px dashed blue; */
 }
-
-form label {
-  display: inline-block;
-}
-
-form input {
-  display: block;
-  width: 100%;
-  padding: 8px;
-  outline: none;
-  border: none;
-} */
