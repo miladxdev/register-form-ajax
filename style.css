@@ -9,6 +9,7 @@ body {
   color: white;
   font-size: 1rem;
   font-family: "Courier New", Courier, monospace;
+  font-family: sans-serif;
   padding: 40px;
 }
 
@@ -23,4 +24,17 @@ body {
   max-width: 900px;
   margin: auto;
   /* border: 1px dashed blue; */
+}
+
+#data {
+  /* border: 2px solid red; */
+  height: 500px;
+}
+table {
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid lightseagreen;
 }

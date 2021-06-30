@@ -1,11 +1,21 @@
 {
   "users": [
+  
     {
-      "id": 1,
-      "name": "John",
-      "last name": "DOE",
-      "email": "john@gmail.com",
-      "state": "esfahan"
+      "id": 0.5071684312165321,
+      "first name": "Mark",
+      "last name": "Otto",
+      "username": "mark2020",
+      "email": "markot21@outlool.com",
+      "password": "sdfsdf545*7&y"
+    },
+    {
+      "id": 0.3917831913106675,
+      "first name": "Milad",
+      "last name": "Gharibi",
+      "username": "Milad2021",
+      "email": "miladgharibi@gmail.com",
+      "password": "45G*&v2#54"
     }
   ]
 }
