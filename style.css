@@ -27,14 +27,26 @@ body {
 }
 
 #data {
+  margin-top: 20px;
   /* border: 2px solid red; */
-  height: 500px;
+  /* height: 500px; */
 }
-table {
-  width: 100%;
-}
+
 table,
 th,
 td {
-  border: 1px solid lightseagreen;
+  border: 1px solid #333344;
+  padding: 8px;
+}
+
+table {
+  width: 100%;
+  border: 2px solid hsl(240, 14%, 20%);
+}
+th {
+  background: hsl(240, 14%, 15%);
+}
+
+tr:nth-child(even) {
+  background: #333344;
 }

@@ -1,6 +1,5 @@
 {
   "users": [
-  
     {
       "id": 0.5071684312165321,
       "first name": "Mark",
@@ -16,6 +15,22 @@
       "username": "Milad2021",
       "email": "miladgharibi@gmail.com",
       "password": "45G*&v2#54"
+    },
+    {
+      "id": 0.7967342579362549,
+      "first name": "Elon",
+      "last name": "Mask",
+      "username": "elon_4454",
+      "email": "maskspacex$gmail.com",
+      "password": "45FG&^87kjJ"
+    },
+    {
+      "id": 0.175936883281822,
+      "first name": "Steven",
+      "last name": "Walberg",
+      "username": "steven210",
+      "email": "walbergss@gmail.com",
+      "password": "45GH^%8**"
     }
   ]
 }

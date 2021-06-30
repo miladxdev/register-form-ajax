@@ -9,8 +9,7 @@ const dataSection = document.querySelector("#data");
 
 function createTable(data) {
   let html = "";
-  let tr = "";
-  let tableRows = "";
+  let tableRow = "";
   let tableHeader = "";
 
   for (let key in data[0]) {
@@ -20,7 +19,8 @@ function createTable(data) {
   }
 
   data.map((value) => {
-    tr += `
+    console.log(value);
+    tableRow += `
       <tr>
         <td>${value["first name"]}</td>
         <td>${value["last name"]}</td>
@@ -29,11 +29,10 @@ function createTable(data) {
         <td>${value.password}</td>
       </tr>
     `;
-
-    tableRows += tr;
   });
+  // console.log(tableRow);
 
-  html = `<table> ${tableHeader} ${tableRows} </table>`;
+  html = `<table> <tr>${tableHeader}</tr> ${tableRow} </table>`;
   dataSection.innerHTML = html;
 }
 
@@ -45,14 +44,13 @@ function getUser() {
   xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       let response = JSON.parse(this.responseText);
-      // console.log(response.length);
-
       createTable(response);
     }
   };
 
   xhr.send();
 }
+
 getUser();
 
 function postUser() {
