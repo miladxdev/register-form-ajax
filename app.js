@@ -19,7 +19,6 @@ function createTable(data) {
   }
 
   data.map((value) => {
-    console.log(value);
     tableRow += `
       <tr>
         <td>${value["first name"]}</td>
@@ -27,12 +26,12 @@ function createTable(data) {
         <td>${value.username}</td>
         <td>${value.email}</td>
         <td>${value.password}</td>
+        <td><button id="${value.id}" class="btn btn-danger" onclick="deleteRow(this)">delete</button></td>
       </tr>
     `;
   });
-  // console.log(tableRow);
 
-  html = `<table> <tr>${tableHeader}</tr> ${tableRow} </table>`;
+  html = `<table id="myTable"> <tr>${tableHeader}</tr> ${tableRow} </table>`;
   dataSection.innerHTML = html;
 }
 
@@ -63,7 +62,6 @@ function postUser() {
   xhr.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 201) {
       let response = JSON.parse(this.responseText);
-      // console.log(response);
       getUser();
     }
   };
@@ -89,3 +87,9 @@ form.addEventListener(
   },
   false
 );
+
+function deleteRow(r) {
+  var i = r.parentNode.parentNode.rowIndex;
+  console.log(r.id);
+  document.getElementById("myTable").deleteRow(i);
+}
